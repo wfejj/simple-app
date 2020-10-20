@@ -18,22 +18,21 @@ Spipeline {
                 script{
 
                     def mavenPom = readMavenPom file: 'pom.xml'
-                    def nexusRepoName = mavenPom.version.endsWith("SNAPSHOT") ? "simpleapp-snapshot" : "simpleapp-release"
                     nexusArtifactUploader artifacts: [
                         [
                             artifactId: 'simple-app', 
                             classifier: '', 
-                            file: "target/simple-app-${mavenPom.version}.war", 
+                            file: "target/simple-app-4.0.0.war", 
                             type: 'war'
                         ]
                     ], 
                     credentialsId: 'NEXUS3', 
                     groupId: 'in.javahome', 
-                    nexusUrl: '192.168.1.6:8081', 
-                    nexusVersion: 'NEXUS3', 
+                    nexusUrl: 'localhost:8081', 
+                    nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'simpleapp-release', 
-                    version: "${mavenPom.version}"
+                    version: "4.0.0"
                     }
             }
         }
