@@ -25,7 +25,7 @@ Spipeline {
                     ], 
                     credentialsId: 'NEXUS3', 
                     groupId: 'in.javahome', 
-                    nexusUrl: 'localhost:8081', 
+                    nexusUrl: 'localhost:8081/nexus', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'simpleapp-release', 
