@@ -1,4 +1,4 @@
-pipeline {
+Spipeline {
     agent any
     tools {
         maven 'maven'
@@ -27,7 +27,7 @@ pipeline {
                             type: 'war'
                         ]
                     ], 
-                    credentialsId: 'nexus3', 
+                    credentialsId: 'NEXUS3', 
                     groupId: 'in.javahome', 
                     nexusUrl: '192.168.1.6:8081', 
                     nexusVersion: 'nexus3', 
