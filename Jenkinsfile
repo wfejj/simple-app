@@ -28,7 +28,7 @@ Spipeline {
                     nexusUrl: 'localhost:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
-                    repository: 'http://localhost:8081/repository/simpleapp-release/', 
+                    repository: 'simpleapp-release', 
                     version: "4.0.0"
                   
             }
