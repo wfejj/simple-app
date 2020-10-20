@@ -30,7 +30,7 @@ Spipeline {
                     credentialsId: 'NEXUS3', 
                     groupId: 'in.javahome', 
                     nexusUrl: '192.168.1.6:8081', 
-                    nexusVersion: 'nexus3', 
+                    nexusVersion: 'NEXUS3', 
                     protocol: 'http', 
                     repository: 'simpleapp-release', 
                     version: "${mavenPom.version}"
