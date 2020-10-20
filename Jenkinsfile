@@ -15,9 +15,6 @@ Spipeline {
         }
         stage('Upload War To Nexus'){
             steps{
-                script{
-
-                    def mavenPom = readMavenPom file: 'pom.xml'
                     nexusArtifactUploader artifacts: [
                         [
                             artifactId: 'simple-app', 
@@ -33,7 +30,7 @@ Spipeline {
                     protocol: 'http', 
                     repository: 'http://localhost:8081/repository/simpleapp-release/', 
                     version: "4.0.0"
-                    }
+                  
             }
         }
     }
