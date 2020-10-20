@@ -1,4 +1,4 @@
-Spipeline {
+pipeline {
     agent any
     tools {
         maven 'maven'
@@ -25,7 +25,7 @@ Spipeline {
                     ], 
                     credentialsId: 'NEXUS3', 
                     groupId: 'in.javahome', 
-                    nexusUrl: 'localhost:8081/nexus', 
+                    nexusUrl: 'localhost:8081', 
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'simpleapp-release', 
