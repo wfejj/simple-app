@@ -6,11 +6,7 @@
 	<packaging>war</packaging>
 	<version>4.0.0</version>
 	<name>simple-app</name>
-	<url>http://maven.apache.org</url>
-	<properties>
-<maven.compiler.source>1.6</maven.compiler.source>
-<maven.compiler.target>1.6</maven.compiler.target>
-</properties>
+	<url>http://maven.apache.org</url>	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
